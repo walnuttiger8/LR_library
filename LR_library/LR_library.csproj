@@ -65,6 +65,7 @@
     <Compile Include="Forms\RegisterForm.cs" />
     <Compile Include="Forms\ResetPasswordForm.cs" />
     <Compile Include="Forms\SignForm.cs" />
+    <Compile Include="Forms\UserCreationForm.cs" />
     <Compile Include="User1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -131,6 +132,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AdminView.resx">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LR_library.Views;
 using LR_library.Forms;
+using LR_library.Controllers;
 
 namespace LR_library
 {
@@ -22,13 +23,14 @@ namespace LR_library
             InitializeComponent();
             registerForm = new RegisterForm(tabPageRegister);
             signForm = new SignForm(tabPageSign);
+            signForm.mainView = this;
         }
 
         private void MainView_Load(object sender, EventArgs e)
         {
             
             registerForm.Draw();
-            signForm.Draw();
+            signForm.Draw();            
         }
 
         private void linkLabelResetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
